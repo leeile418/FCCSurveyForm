@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC Survey Form | Made by Me</title>
+</head>
+<body>
+    <div class="intro">
+        <h1 id="title" class="intro__title">freeCodeCamp Survey Form</h1>
+        <p id="description" class="intro__description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input name="name" type="text" id="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email</label>
+        <input name="email" type="email" id="email" placeholder="Enter your email" required>
+        <label for="age" id="number-label">Age</label>
+        <input name="age" type="number" id="number" min="18" max="100" placeholder="Age">
+        <label for="role">Which option best describes your current role?</label>
+        <select name="role" placeholder="Enter your name" id="dropdown">
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label>
+            <input type="radio" name="rdGroup" value="yes">
+            Definitely
+        </label>
+        <label>
+            <input type="radio" name="rdGroup" value="maybe">
+            Maybe
+        </label>
+        <label>
+            <input type="radio" name="rdGroup" value="no">
+            Not Sure
+        </label>
+
+        <label>Checkboxes</label>
+        <label>
+            <input type="checkbox" name="cbGroup" value="frontend">
+            Front-end Projects
+        </label>
+        <label>
+            <input type="checkbox" name="cbGroup" value="backend">
+            Back-end Projects
+        </label>
+        <label>
+            <input type="checkbox" name="cbGroup" value="datavisualization">
+            Data Visualization
+        </label>
+
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="hello"></textarea>
+        <button id="submit">Submit</button>
+    </form>
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
